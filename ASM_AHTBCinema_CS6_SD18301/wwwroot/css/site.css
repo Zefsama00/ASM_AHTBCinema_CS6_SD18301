@@ -48,3 +48,45 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+@keyframes scroll-tray-hero {
+    0% {
+        transform: translateX(0);
+    }
+
+    99.99% {
+        transform: translateX(-7098px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.scroll-tray {
+    white-space: nowrap;
+}
+
+    .scroll-tray div {
+        display: inline-block;
+    }
+
+    .scroll-tray img {
+        border-radius: 0.3rem;
+        margin: 7px 5px;
+        padding: 0;
+        width: 200px;
+    }
+
+.scroll-holder {
+    overflow-x: hidden;
+}
+
+    .scroll-holder .scroll-tray:first-child {
+        animation: scroll-tray-hero 180s linear infinite;
+    }
+
+    .scroll-holder .scroll-tray:last-child {
+        animation: scroll-tray-hero 150s linear infinite;
+    }
+ body{
+     background-color: black;
+ }
